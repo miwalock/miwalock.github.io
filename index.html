@@ -1,38 +1,62 @@
-<html
+<!DOCTYPE html>
+<html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  <div>
-p.small {
-  line-height: 0.3;
-  margin-right: 980px;
+.DIV {
+  width: 100%;
+  padding: 2px 0;
+  text-align: left;
+  margin-top: 2px;
+  display:none;
 }
-</div>
 </style>
 </head>
 <body>
-  <h1>
-    Miwa Tech Support   (website beta)
-  </h1>
-  <u>
-  Common Issue : Locks not working due to Daylight savings .
-  </u>
-  <br>
-  </br>
-<div>
-<p class="small">
-  Solution: On the Front Desk PC, open the Miwa Software, select the Management tab and issue a daylight savings card.
-</p>
-<p class="small">
-  Run the card by a few locks and test guest cards on the doors afterwards.
-</p>
-<p class="small">
-  If it works, run the daylight savings card by the entire property.
-</p>
-</div>
+
 <a href="/miwalock.github.io/troubleshooting.txt" download>
  <p class="small">
    DOWNLOAD HERE
   </p>
 </a>
+  
+<p>Tech Question One</p>
+<button onclick="myFunction()">Try it</button>
+
+<div class="DIV" id="one">
+Answer One
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("one");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<p>Tech Question 2</p>
+<button onclick="myFunction2()">Try it</button>
+
+<div class="DIV" id="two">
+Answer Two
+</div>
+
+<script>
+function myFunction2() {
+  var x = document.getElementById("two");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
 </body>
 </html>
