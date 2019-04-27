@@ -14,6 +14,18 @@
   background: #F0FBF6;
 }
 </style>
+  
+  <style>
+.PIC {
+  width: 100%;
+  padding: 2px 0;
+  text-align: left;
+  margin-top: 2px;
+  margin-left:45px;
+  display:none;
+  width: 700px;
+}
+</style>
 
 <style>
 .q {
@@ -57,10 +69,17 @@ TITLE
 <button onclick="myFunction()">Try it</button>
 </div>
 
+<div class="q">
+<button onclick="myFunction()">PICS</button>
+</div>
+
 <div class="DIV" id="one">
 Answer One
-  
-  <img src="download.jpg" alt="TEST PIC ONE">
+</div>
+
+<div class="PIC" id="onea">
+ <img src="download.jpg" alt="TEST PIC ONE">
+
 </div>
 
 <script>
@@ -73,6 +92,19 @@ function myFunction() {
   }
 }
 </script>
+
+script>
+function myFunctiona() {
+  var x = document.getElementById("onea");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
 
 <div class="q">
 <p>
