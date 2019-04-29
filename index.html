@@ -67,7 +67,8 @@ Miwa Lock Co. USA
 
 <div class="q">
 <p>L1)How to Reprogram a lock as a guest or common door? </p>
-<button onclick="myFunction()">1)Click for Solution</button>
+<button onclick="myFunction()">1a)Click for Tablet DTU</button>
+ <button onclick="myFunction()">1b)Click for Keypad DTU</button>
 </div>
 
 <div class="q">
@@ -75,6 +76,74 @@ Miwa Lock Co. USA
 </div>
 
 <div class="DIV" id="one">
+ PLEASE NOTE THERE ARE TWO KINDS OF LOCK PROGRAMERS- <br>
+  A TOUCH SCREEN TABLET OR A KEYPAD DTU <br>
+  PLEASE FOLLOW THE DIRECTIOS DEPENDING ON WHICH KIND YOU HAVE <br><br>
+TABLET DTU: <br> 
+*Double click the DTU Icon and select yes on allowing changes <br>
+  Make Sure the Time is Correct in the upper right hand corner<br>
+
+Programming a Guest Door <br>
+With DTU Software Open – <br>
+Sign in w/ Staff Code <br>
+a.) Select IrDA (skip if it doesn’t ask you) <br> 
+b.) on Main Menu select Lock Initialization <br>
+c.) select Guest Door <br>
+d.) Set the Room No., and press confirm (bottom right) <br>
+e.) Use DTU card against door and put away, light should be orange <br>
+f.) Aim DTU Tablet and press send <br> 
+  *If you have the P-Type (Wide) locks, aim at the Upper Right corder as shown in the picture<br><br>
+Programming a Common Door <br>
+With DTU Software Open— <br>
+Sign in w/ Staff Code <br>
+a.) Select IrDA (skip if it doesn’t ask you) <br> 
+b.) on Main Menu select Lock Initialization <br>
+c.) select Common Door <br>
+d.) Set the Room No (Room # is not important w/ common doors)<br>
+e.) Set the Room Range (Hotel’s Lowest Room# to Highest Room#), Then Press Confirm <br>
+f.) Use DTU card against door and put away, light should be orange <br>
+g.) Aim DTU Tablet and press send <br>
+    *If you have the P-Type (Wide) locks, aim at the Upper Right corder as shown in the picture<br><br><br>
+
+KEYPAD DTU: <br>
+  *Check the date/time by turning on, enter staff code/password, Press 1 (R/C), F2, F2, Enter the time on W-3.<br>
+  if on W-4, keep pressing enter to cycle through until you are back at W-3. <br>
+  Programming a new guest door lock <br>
+a)	Turn on the DTU <br>
+b)	Sign in with your staff code and password, then press Enter <br>
+c)	Press the #1 button for R/C <br>
+d)	Select F1 for Normal Mode.<br>
+e)	Select F4 for Data Mode. <br>
+f)	Room Type is 02 for guest doors, press Enter.<br>
+g)	Input the room number and press enter three times.<br>
+h)	Input the floor number and press enter three times. <br>
+i)	Hold the DTU card to the lock, when you have orange LED, Aim unit at lock and press SEND/RCV.<br>
+j)	DTU will say “Try Connect” and “Loading Success” when finished.<br>
+  *If you have the P-Type (Wide) locks, aim at the Upper Right corder as shown in the picture<br><br>
+
+Programming a new lock as a common door.<br>
+a)	Turn on the DTU.<br>
+b)	Sign in with your staff code and password, then press Enter<br>
+c)	Press the #1 button for R/C<br>
+d)	Select F1 for Normal Mode.<br>
+e)	Select F4 for Data Mode.<br>
+f)	Room type is 01 common doors, press the up arrow one time to select, press Enter three times<br>
+g)	Input a Room Number to identify this door, press Enter three times.<br>
+h)	Input a Floor Number and press Enter three times.<br>
+i)	Input Room Range, type lowest room number and press Enter, then type highest room number and press Enter three times.<br>
+j)	Press Enter to bypass Special Number <br>
+k)	Press Enter to bypass Non-Guest Number <br>
+l)	Press Enter two times then input Guest Valid Time. Using military time type the time a card will start working in lock (i.e. 0600) the time card stops working in lock (i.e. 2100), type all eight numbers before pressing Enter three times.<br>
+m)	Input days of the week, (by default 1234567 should be on screen). Press Enter. <br>
+n)	If you want the door to stay open automatically, you will need to set a Time Zone, Option 01 should be Unset. If it is not, use the down arrow button to select Unset option.  <br>
+o)	Time Zone. Input the time you want the door to unlock and then the time you want door to lock. Example – 06002200 and press Enter three times. All zeros by default and the door is locked all the time. <br>
+p)	Hold the DTU card to the lock, when you have orange LED, Aim unit at lock and press SEND/RCV. <br>
+q)	DTU will say “Try Connect” and “Loading Success” when finished. <br>
+  *If you have the P-Type (Wide) locks, aim at the Upper Right corder as shown in the picture <br> 
+
+</div>
+
+<div class="DIV" id="oneb">
  PLEASE NOTE THERE ARE TWO KINDS OF LOCK PROGRAMERS- <br>
   A TOUCH SCREEN TABLET OR A KEYPAD DTU <br>
   PLEASE FOLLOW THE DIRECTIOS DEPENDING ON WHICH KIND YOU HAVE <br><br>
@@ -166,6 +235,17 @@ function myFunction() {
 <script>
 function myFunctiona() {
   var x = document.getElementById("onea");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+function myFunctionb() {
+  var x = document.getElementById("oneb");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
