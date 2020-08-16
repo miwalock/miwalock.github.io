@@ -225,7 +225,188 @@ function myFunctionb() {
   } 
 }
 </script>
+<!--End 1st--->
+<!-- Start Second --> 
+<div class="q">
+<p>
+<br>L2)  Guest Cards do not work, but staff cards are able to access the door.</p>
+<button onclick="myFunction2()">2) Show/Hide Solution</button>
+</div>
 
+<div class="DIV" id="two">
+This may be due to the set time in the lock being wrong. <br>Please look at question L1, which is right above this question. you'll have to reprogram your lock) <br><br> You can also test this
+  by creating a guest card for the room, using it on the door to have it light up red <br>(when a door lights red, it writes an error code into
+  the card). <br>Bring back the card to the front desk and select Read Guest Card. <br>Look for an error type in the description.<br> If it is 
+  out of staying period, then it has the wrong time and reprogramming the lock/retesting the card should correct the issue. 
+</div>
+
+<script>
+function myFunction2() {
+  var x = document.getElementById("two");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End Second --> 
+<!-- Start Third --> 
+
+<div class="q">
+<p>
+<br>L3) Lock always has the Green light on and is Always open after using emergency card</p>
+<button onclick="myFunction3()">3) Show/Hide Solution</button>
+</div>
+
+<div class="DIV" id="three">
+Remove Emergency mode with Tablet or Keypad DTU<br><br>
+  <u>TABLET DTU:</u> 
+  *Double click the DTU Icon and select yes on allowing changes <br>
+With DTU Software Open – <br>
+Sign in w/ Staff Code <br>
+a.) Select IrDA (skip if it doesn’t ask you) <br> 
+b.) on Main Menu select Lock Control <br>
+c.) Select Release EM Mode and press confirm <br>
+d.) Aim at the lock and press send<br>
+  *for wide type locks, aim at the upper right hand corner (3-4 inches away) <br><br>
+  
+  <br>
+  <u>KEYPAD DTU:</u>
+Press the On button, Log in, Press 1 for R/C, Press F4, Press F3 (if logged w/ maintenance code, if not then skip),  Press  F1 (EC on the screen), Aim the Lock and Press send/rcv 
+*For wide type locks, aim at the upper right hand corner (3-4 inches away)
+</div>
+
+<script>
+function myFunction3() {
+  var x = document.getElementById("three");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End Third --> 
+
+<!-- Start Fourth --> 
+
+<div class="q">
+<p>
+<br>L4) Unable to make keys in the front desk, white NFC encoder is having write/read error</p>
+<button onclick="myFunction4()">4) Show/Hide Solution </button>
+</div>
+
+<div class="DIV" id="four">
+*This file need to be installed/reinstalled- ACS_Unified_PCSC_Driver-4.1.0.0<br>
+*In Device Manager, smart card reader tab needs to be reviewed- if it is Microsoft smartcard reader, it is the wrong driver<br><br>
+
+Before doing any uninstalling, please find the Miwa USB drive we have provided. It has all the necessary programs that need to be reinstalled.<br> 
+ If you do not have it, you may have repurchase the software from us. <br><br>
+
+Open Control Panel, Device Manager, Click the Smartcard readers tab and uninstall the driver. <br>
+  (If it is Microsoft, that is definitely the wrong one. If it is something else, then a reinstallation may be required)<br>
+
+Find and insert the Miwa USB drive we have provided that has the server software.<br>
+For Ver. 4.0.0.2,  look in the ACR122U folder x64x64 ACS_Unified_PCSC_Driver-4.1.0.0   (install this, reinstall if already installed previously) <br>
+or
+For Ver 3.1.4, Look in the NFC-USB Encode Driver x64 folder  ACS_Unified_PCSC_Driver-4.1.0.0   (install this, reinstall if already installed previously)<br>
+Restart the PC <br>
+Once restarted, test out the software and see if the encoder works<br>
+</div>
+
+<script>
+function myFunction4() {
+  var x = document.getElementById("four");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End Fourth--> 
+
+<!-- Start 5th --> 
+<div class="q">
+<p>
+<br>L5) How do I do a lock interrogation (gathering data on when lock was accessed/by whom) </p>
+<button onclick="myFunction5()">5) Show/Hide Solution </button>
+</div>
+<div class="DIV" id="five">
+  <u> This involves making an interrogation card and running it by the door to be checked</u><br> <br>
+  
+Open the ALV2 PC Server software in the front desk PC.<br>
+Sign on as a Manager, click on Management, click Interrogation log card, issue it using a white staff card.<br>
+Take the card to the door to be checked, it will blink red a few times then green, <br>
+Take card back to PC, Select Management, Read Management card,<br>
+Click DTU tab, click lock log, On the Upper right area below interrogation log: Select the room # and click CSV, On the popup click cancel.<br> The data should show up in the bottom area.<br>
+<br>
+Additional info: <br>
+SMS means submaster, which is a staff member<br>
+GUA means guest 
+  
+</div>
+<script>
+function myFunction5() {
+  var x = document.getElementById("five");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End 5th--> 
+
+<!-- Start 6th --> 
+<div class="q">
+<p>
+<br>L6) Purchased a new PC, need to Install/Setup ALV2 Software</p>
+<button onclick="myFunction6()">6) Show/Hide Solution</button>
+</div>
+<div class="DIV" id="six">
+You will need to call us at 949-328-5280 for this setup, we will do it remotely.<br><br>
+
+  <u>Preparation:</u> <br>
+Make sure Team Viewer is installed in the new any other PC that is being used<br>(Webex can be used if Team Viewer is not allowed in your property) <br>
+Have the Miwa USB drive ready (it has the software necessary for installation and setup). <br>
+You can install the ALV2 PC Server software in the new computer, but we will have to do the staff and room setup/connecting it to your other PCs. 
+
+</div>
+<script>
+function myFunction6() {
+  var x = document.getElementById("six");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End 6th--> 
+
+<!-- Start 7th --> 
+<div class="q">
+<p>
+<br>L7) Disabling Lost/Stolen Staff or Guest Keys </p>
+<button onclick="myFunction7()">7) Show/Hide Solution</button>
+</div>
+<div class="DIV" id="seven">
+ Create a new issue of the staff or guest key and run it by the appropriate door.<br>
+  The old keys will no longer work on a lock that is activated by a new issue of keys.
+</div>
+<script>
+function myFunction7() {
+  var x = document.getElementById("seven");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End 7th--> 
 <!-- Start 8th --> 
 <div class="q">
 <p>
