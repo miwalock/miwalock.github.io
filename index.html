@@ -298,6 +298,9 @@ You can either clear the locks' sequence using your DTU programmer (Look at Ques
 You can either clear the locks' sequence using your DTU programmer (Look at Question L5) or issue a New Card under the same staff member's account (Look at Question S1)<br><br>
 <u> Mismatched Room # </u> - The Key was used on the wrong room #. 
 <br><br>
+<u> Deadbolt Active </u> - The guest has the deadbolt activated on the room <br> 
+If you need staff emergency access, you can issue a staff key and check the Deadbolt Override box, see S1 for issuing staff keys <br><br>
+<u> MLO Active </u> - A lockout card was used on the lock, Issue a cancel card and use it on the lock (Also see Question L8 Below) <br><br>
 <u>If Lock blinks red 5 times</u> and doesn't allow access to room- The batteries are low and need to be replaced (Look at Question L4 below) <br><br>
 <u>If the lock blinks red 6 times and green 6 times but still allows access</u> - The date and time is off, it should be reprogrammed (Look at Question L1 above)
 
@@ -558,8 +561,11 @@ function myFunctionL7() {
 <button onclick="myFunctionL8()">L8) Show/Hide Solution</button>
 </div>
 <div class="DIV" id="L8">
- Issue a lockout card, select master lockout<br>
- To allow access to the room again- <br>
+  <u> Issuing a lockout card</u>
+ Click on Management, Click on Lockout Card<br>
+ Select master lockout and issue using a Management Card<br>
+ When used on a door, that door will not accept keys anymore <br><br>
+  <u> To allow access to the room again-</u> <br>
   Issue a cancel card and use it on that lock<br> 
   <img src="Lockout and Cancel.jpg" alt="legacyp" hspace="8" style="width:360px;height:365px;"> 
  
@@ -696,7 +702,9 @@ Click Submaster<br>
 Select the person’s account<br>
 You have two choices, select the checkbox you need- <br>
 -Check the New Issue box if you want a brand new card, or want to make a replacement card that will Disable the previously issued card, then click issue<br>
--Check the Duplicate Issue box if you want to make a new card that will Not disable the previously issued card, then click issue<br>
+-Check the Duplicate Issue box if you want to make a new card that will Not disable the previously issued card, then click issue<br><br>
+  
+Note: If you want deadbolt override for the staff member, you can also check that box 
 
 </div>
 <script>
