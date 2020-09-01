@@ -1,6 +1,30 @@
 <html>
 
 <head>
+  <style>
+  .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+  
+  .button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+  </style>
 </head>
 
 
@@ -18,9 +42,34 @@
   9272 Jeronimo Road, Irvine CA 92618 <br>
   AW2H - Technical Support Website v1.00
 </h4>
-  
-  
 </p>
+
+<!-- Start Third --> 
+
+<div class="q">
+<p>
+<br>L3) Lock always has the Green light on and is Always open after using emergency card</p>
+<button class="button" onclick="myFunction3()">3) Show/Hide Solution</button>
+</div>
+
+<div class="DIV" id="three">
+  
+Test
+
+ 
+</div>
+
+<script>
+function myFunction3() {
+  var x = document.getElementById("three");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End Third --> 
   
   
 </body>
