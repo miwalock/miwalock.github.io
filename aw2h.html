@@ -1,46 +1,79 @@
 <html>
 
-<head>
-  <style>
-  .button {
-  display: inline-block;
-  padding: 5px 5px;
-  font-size: 12px;
-  cursor: pointer;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #0F6637;
-  border: none;
-  border-radius: 8px;
-}
-  
-  .button:hover {background-color: #F1B233;}
 
-.button:active {
-  background-color: #3e8e41;
-  transform: translateY(4px);
+<head>
+    <style>
+    .DIV {
+  text-align: left;
+  margin-top: 2px;
+  margin-left:25px;
+  display:none;
+  width: 950px;
+  background: #F0FBF6;
+    margin-bottom:25px;
 }
-  </style>
-  
-  <style>
-.DIV {
+</style>
+      <style>
+.PIC {
   text-align: left;
   margin-top: 2px;
   margin-left:25px;
   display:none;
   width: 850px;
-  background: #F0FBF6;
-    margin-bottom:25px;
 }
 </style>
+    <style>
+.x {
+  text-align: left;
+  margin-top: 2px;
+  margin-left:45px;
+  width: 1600px; 
+  font: 17px arial, sans-serif;
+  color:#049635;
+        }
+    </style>
+    <style>
+.q {
+  text-align: left;
+  margin-top: 2px;
+  margin-left:25px;
+  width: 850px; 
+  font: 17px arial, sans-serif;
+  color:#049635;
+}
+</style>
+	
+  <style>
+  .button {
+  display: inline-block;
+  padding: 3px 3px;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: 000000;
+  background-color: #F7F4EF;
+  border-color: 858684;
+  border-radius: 8px;
+  border-width: thin;	  
+}
+  
+  .button:hover {background-color: #CBCAC7 ;}
+
+.button:active {
+  background-color: #DBF3D0;
+  transform: translateY(4px);
+}
+  </style>
+  
+
 </head>
-
-
 <body>
-<p>
-<h1 style="margin-left:400px; color:green;">
-  Miwa Lock Co. USA <br> </br>
+ 
+  <p>
+<h1 style="margin-left:400px; color:purple;">
+Miwa Lock Co. USA - AW2H <br>
+  </br>
 </h1>
 </p>
 
@@ -49,23 +82,314 @@
 
   Contact Phone # 949-328-5280<br>
   9272 Jeronimo Road, Irvine CA 92618 <br>
-  AW2H - Technical Support Website v1.00
+  AW2H   -Technical Support Website v1.00 J.STR2
 </h4>
+ <div class="x">
+<p>Frequently Asked Questions for AW2H Locks:
+  <br>
+   <img src="AL5H Lock.jpg" alt="wide" style="width:200px;height:200px;" hspace="5" >
+    <img src="AL5H-AW2H Wall Reader.jpg" alt="slim" style="width:200px;height:200px;" hspace="5">
+  <img src="AL5H Standalone Insert Chip Key2.jpg" alt="dcu" style="width:200px;height:200px;" hspace="5">
+     <img src="MSR and Athena.jpg" alt="pbi" style="width:200px;height:200px;" hspace="5">
+ <img src="ALV2 Legacy DTU.jpg" alt="pbi" style="width:200px;height:200px;" hspace="5">
+ <img src="Tablet DTU.jpg" alt="pbi" style="width:200px;height:200px;" hspace="5">
+  </br>
+  </p>
+  </div>
 </p>
+<div class="q">
+	<p> <b>L1) How to Reprogram a lock as a guest or common door? </b> </p>
+<button class="button" onclick="myFunction()">1A) CLICK to show/hide StandAlone (Large keypad w/ slider) Lock Programming Guide</button>
+</div> <br>
+ <div class="q">
+ <button class="button" onclick="myFunctionb()">1B) CLICK to show/hide Legacy (Small keypad) Lock Programming Guide</button>
+</div> <br>
+  <div class="q">
+ <button class="button" onclick="myFunctiona()">1C) CLICK to show/hide Tablet Lock Programming Guide</button>
+</div>
 
+
+<div class="DIV" id="one">
+     <img src="AL5H Standalone aim at lock.jpg" alt="Tablet" hspace="8" style="width:350px;height:350px;">
+	 <img src="AL5H Standalone Detached.jpg" alt="Tablet" hspace="8" style="width:350px;height:350px;">
+    <br>
+    <u>Large Keypad w/ Slider (StandAlone Unit) Instrctions</u><br><br>
+   **Before doing any kind of programming, check the date and time on your device first <br>
+     Press the On Button <br>
+    Sign in w/ Staff Code and Password, Press F1(Ok) <br>
+    Select 7 - DTU Setting, Press F1(Ok) <br>
+    Select Date & Time Settings, Press Enter <br>
+    Put in the correct Date and Time (Military Time) <br><br>
+
+    You'll have to Detach the Keypad from Slider to be able to use it for programming locks <br><br>
+    
+    <u>  Programming a new guest door lock. </u><br>
+a)	Turn off FDU. <br>
+b)	Seprate the Keypad from the Base Slider. <br>
+c)	xxx <br>
+d)	Turn on the DTU. <br>
+e)	Enter your Staff Code, Password and Press F1 (Ok)<br>
+f)	Press 1 for Normal Mode. <br>
+g)	Press 4 for Data Mode. <br>
+h)	Room Type is 02 for guest and press F1. <br> 
+i)	Input the room number and press enter. <br>
+j)	Input the floor number, aim unit at lock, insert any card into the lock to wake it up (Red light is ok, leave card in there) and press the SEND/RCV key. <br>
+k)	At Hotel Code Error prompt press the Error Reset key. <br>
+**Note: if programming a brand new card reader, you MUST sign in with the Maintenance Code. It is normal to get the hotel code error, select Error Reset and then press SEND/RCV and Aim at lock again <br>
+l)	Press F1 for Retry Download. <br>
+m)	DTU will say “Now Loading” and “Loading End” when finished. <br>
+*Aim at the black stripe to the right of the indicator light (3-4 inches away) <br>
+*The Item Resel. Button is your back button if you need to go to a previous choice <br>
+
+
+    <br><br>
+    
+    <u> Programming a new lock as a common door.</u><br>
+a)	Follow steps a-g from above. <br>
+b)	Room type is 01 common and press enter. <br>
+c)	Press F1. <br>
+d)	Press F4 to edit. <br>
+e)	Input floor number and press down arrow. <br>
+f)	Press enter to highlight days of the week, (all days should be highlighted). <br>
+g)	Press F1. <br>
+h)	Press down arrow till you get to Room Range 1. <br>
+i)	Press F4 to edit. <br>
+j)	Input lowest room in range and press enter. <br>
+k)	Input highest room in range and press F1 for ok. <br>
+l)	Press F1 for ok. <br> 
+m)	Aim unit at lock, insert any card into the lock to wake it up (Red light is ok, leave the card in there), and press SEND/RCV.<br> 
+n)	At Hotel Code Error prompt press the Error Reset button. <br>
+  **Note: if programming a brand new card reader, you MUST sign in with the Maintenance Code. It is normal to get the hotel code error, select Error Reset and then press SEND/RCV and Aim at lock again <br>
+o)	Press F1 to Retry Download. <br>
+p)	Aim DTU at lock and press the SEND/RCV key. <br>
+q)	DTU will say “Now Loading” and “Loading End” when finished. <br>
+*Aim at the black stripe to the right of the indicator light (3-4 inches away) <br>
+*The Item Resel. Button is your back button if you need to go to a previous choice <br>
+
+
+
+</div>
+
+<div class="DIV" id="oneb">
+    <img src="Legacy AL5H DTU aim to lock.jpg" alt="Tablet" hspace="8" style="width:350px;height:350px;">
+  <img src="ALV2 Legacy DTU.jpg" alt="Tablet" hspace="8" style="width:350px;height:350px;">
+	 <br>
+    <u>Small Keypad (legacy) Instructions </u> <br>
+    
+    *Before Programming- Check the date/time by turning on, enter staff code/password, Press 1 (R/C), F2, F2, Enter the date on W-3 and (military) time on W-4 (hours,minutes,seconds). If on W-5 or higher, keep pressing enter to cycle through until you are back at W-3.
+<br> <br> <br>
+    
+    <u>   Programming a new guest door lock.  </u> <br>
+	a) Press the on/off button to turn on DTU   <br>
+	b) Sign in with staff code and password  then press Enter   <br>
+	c) Press the #1 button for R/C   <br>
+	d) Select F1 for Normal Mode.  <br>
+	e) Select F4 for Data Mode.  <br>
+	f) Room Type is 02 for guest doors, press Enter.   <br>
+	g) Input the room number and press enter three times.   <br>
+	h) Input the floor number and press enter three times.   <br>
+	i) Data Mode DLL , Push SEND/RCV button   <br>
+	j) DTU will say “Try Connect” insert card into the lock, don’t remove card aim DTU at LED until display shows “Loading Success” when finished, if Loading fail push error reset and try again   <br>
+*Aim at the black stripe to the right of the indicator light (3-4 inches away)  <br>
+	*The Item Resel. Button is your back button if you need to go to a previous choice <br>
+**Note: if programming a brand new card reader, you MUST sign in with the Maintenance Code. It is normal to get the hotel code error, select Error Reset and then press SEND/RCV and Aim at lock again <br>
+     <br>  <br>   <br>
+
+    <u>Programming a new lock as a common door </u> <br>
+a) Turn on the DTU.  <br>
+b) Sign in with your staff code and password, then press Enter <br>
+c) Press the #1 button for R/C <br>
+d) Select F1 for Normal Mode. <br>
+e) Select F4 for Data Mode. <br>
+f) Room type is 01 common doors, press the up arrow one time to select, press Enter three times <br>
+g) Input a Room Number to identify this door, press Enter three times. <br>
+h) Input a Floor Number and press Enter three times. <br>
+i) Press Clear, then Input Room Range, type lowest room number and press Enter, then type highest room number and press Enter three times. <br>
+j) Press Enter to bypass Special Number <br>
+k) Press Enter to bypass Non-Guest Number<br> 
+l) For Guest Valid Time- Using military time, enter an it as an 8 digit number (first 4 is start, last 4 is end). Ex: 06002359 means it is available to guests from 6AM to 11:59PM. Press Enter three times after. <br>
+m) Input days of the week, (by default 1234567 should be on screen). Press Enter. <br>
+n) If you want the door to stay open and not require a key during certain hours, you will need to set a Time Zone <br>
+n2) Otherwise skip Time Zone <br>
+o) To set a Time Zone, Press the down arrow to change it from Unset to Time Zone 1 and press enter <br>
+o2) Enter the start and end time- Example – 06002200 and press Enter three times, that will set the lock to stay unlocked from 6AM to 10PM and allow free access during that time <br>
+p) Insert any card to wake up the sensors and have it light up red, Aim unit at lock and press SEND/RCV, Lock can only be programmed while it is awake/red light  <br>
+q) DTU will say “Try Connect” and “Loading Success” when finished. <br>
+*Aim at the black stripe to the right of the indicator light (3-4 inches away) <br>
+*The Item Resel. Button is your back button if you need to go to a previous choice <br>
+**Note: if programming a brand new card reader, you MUST sign in with the Maintenance Code. It is normal to get the hotel code error, select Error Reset and then press SEND/RCV and Aim at lock again <br><br>
+
+Note: If you want to disable guests and only allow staff to enter a room: <br>
+Program it as a common door, but on step L, enter 00000001
+
+    
+</div>
+
+<div class="DIV" id="onea">
+ <img src="AL5H Tablet aim to lock.jpg" alt="Tablet" hspace="8" style="width:350px;height:350px;">
+ <img src="Tablet DTU.jpg" alt="Tablet" hspace="8" style="width:350px;height:350px;">
+	
+    <br>
+  <u>Touch Screen Tablet Instructions </u><br>
+ Plug in the Black Actisys USB, that is where the signal comes out of <br>
+ Check the Windows date and time on your tablet before opening the DTU software <br>
+ Double Click DTU Starter Icon <br>
+Tap Ok [F1] Button <br>
+Enter Staff Code and Password<br>
+Tap Ok<br>
+ Check the Date and Time on the DTU Software before doing any kind of programming<br><br>
+
+    <u>For Guests Room: </u><br>
+a) Select 1. Lock Setup Menu<br>
+b) Select 1. Initialize Lock Data<br>
+c) For Room Type Enter 2<br>
+d) Enter the Room #<br>
+e) Enter the Floor # (Example: for first floor, enter 01) then press Ok<br>
+f) Press Download<br>
+g) (Make sure to wake up the lock sensors by inserting any card, leaving it there 
+and having it LIGHT UP RED while you send the signal) <br>
+h) Press Ok<br>
+i) Aim the Infrared USB at the lock<br><br>
+
+    <u>For Common Doors:</u><br>
+After Entering Staff Code and Password-<br>
+a) Select 1. Lock Setup Menu<br>
+b) Select 1. Initialize Lock Data<br>
+c) For Room Type Enter 1<br>
+For Room #      (Depends on which floor it is. If first floor put in 101, or else second floor- 201, etc)<br>
+(Room # isn't important for common doors, you can have multiple common doors w/ same #)<br>
+d) Then Press Ok Enter the Floor #      (Example for first floor enter 01)<br>
+
+e) Double Tap the numbers to the right of room range 1<br>
+f) On Room Range 1, change FROM 000000 to the lowest room # in your hotel<br>
+g) Change TO 0000000 to the highest room # in your hotel, Tap Ok<br>
+
+Scroll down to No. 30 GUEST VALID<br>
+Double Tap the 00:00-00:00<br>
+on GUEST VALID change it to the (Military) times you want guests to be able to access this door.<br>
+(Ex: if you want them to be able to use it 6am to 10pm, enter 06:00-22:00)<br>
+(Ex: if you want 24/7 access as long as they have a key, enter 00:00-23:59)<br>
+(EX: if you don't want guess to access a room and only staff members, enter 00:00-00:01)<br>
+h) Tap Ok<br>
+i) Tap Download<br>
+j) (Make sure to wake up the lock sensors by inserting any card, leaving it there
+and having it LIGHT UP RED While you send the signal) <br>
+k) Press Ok<br>
+l) Tap Ok, Aim the Infrared USB at the lock<br>
+  
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("one");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  
+   var y = document.getElementById("oneb");
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } 
+   var d = document.getElementById("onea");
+  if (d.style.display === "block") {
+    d.style.display = "none";
+  } 
+    
+}
+</script>
+
+<script>
+function myFunctiona() {
+  var x = document.getElementById("onea");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   var y = document.getElementById("oneb");
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } 
+  
+   var z = document.getElementById("one");
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } 
+  
+}
+</script>
+
+<script>
+function myFunctionb() {
+  var a = document.getElementById("oneb");
+  if (a.style.display === "block") {
+    a.style.display = "none";
+  } else {
+    a.style.display = "block";
+  }
+  
+  var z = document.getElementById("one");
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } 
+  var d = document.getElementById("onea");
+  if (d.style.display === "block") {
+    d.style.display = "none";
+  } 
+}
+</script>
+<!--End 1st--->
+<!-- Start Second --> 
+<div class="q">
+<p>
+	<br> <b> L2)  Lock lights up red and doesn't allow access to the room. </b></p>
+<button class="button" onclick="myFunction2()">2) Show/Hide Solution</button>
+</div>
+
+<div class="DIV" id="two">
+(under construction) <br>
+Reprogram the lock using your DTU lock programmer (there's 3 kinds, choose the one you have), see Question L1 above <br><br>
+If it lights up red, then yellow, it is a sequence issue, try clearing the sequence, then using a card again<br>
+See question L6 (Clearing the sequence)   below <br><br>
+    
+For guest key still lighting up red, try making a guest key with the check in date of week ago, and check out of 1 week from from today, then using it on the lock<br>
+If you get it to work it may be a date/time issue.<br>
+For staff keys not working, try making a New Issue under submaster card and using it on the lock<br><br>
+    
+If it is still not working with any card, you may have to replace the card reader.
+</div>
+
+<script>
+function myFunction2() {
+  var x = document.getElementById("two");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End Second --> 
 <!-- Start Third --> 
 
 <div class="q">
 <p>
-<br>L3) Lock always has the Green light on and is Always open after using emergency card</p>
+	<br><b> L3) Lock is out of power and unresponsive to any card</b> </p>
 <button class="button" onclick="myFunction3()">3) Show/Hide Solution</button>
 </div>
 
 <div class="DIV" id="three">
-  
-Test
-
- 
+     <img src="AL5H with EM Kit.jpg" alt="Tablet" hspace="8" style="width:325px;height:325px;"> OR 
+     <img src="override keys.jpg" alt="Tablet" hspace="8" style="width:325px;height:325px;"> <br><br>
+    <u> Plug Emergency Battery kit undernearth lock and use key card to gain entry</u><br>
+    or<br>
+    <u> Use the Physical Override Key if your lock has that feature</u><br><br>
+  Replace the lock's batteries once room is accessed, and Reprogram the lock to correct date/time. <br>
+  Try any card after and see if it lights up green. <br><br>
+  If it is still unresponsive after replacing the batteries, you'll have to replace the card reader inside.<br>
+  You can call our office if you need to order another one. 
 </div>
 
 <script>
@@ -79,8 +403,283 @@ function myFunction3() {
 }
 </script>
 <!-- End Third --> 
+
+<!-- Start 4A--> 
+
+<div class="q">
+<p>
+<br> <b> L4 A) Large Keypad with Slider: How to Create a staff member account on key machine and Issue staff Keys? </b> </p>
+<button class="button" onclick="myFunction4A()">4A) Show/Hide Solution </button>
+</div>
+
+<div class="DIV" id="4A">
+  <img src="AL5H Standalone Insert Chip Key2.jpg" alt="dcu" style="width:260px;height:260px;" hspace="5">  <br>
+    
+<u> Instructions for LARGE KEYPAD & SLIDER STANDALONE Keymaker (old school type) -</u><br>
+
+    <u>Adding staff members to the Large Keypad StandAlone Unit </u><br> 
+	
+a) Make sure the Large Keypad is attached to the Slider <br>
+b) xxx <br>
+c) Turn on FDU. <br>
+d) Enter Staff Code and press enter <br>
+e) Enter Password and press F1 <br>
+f) Press the #2 button for Default setup. <br>
+g) Press the #2 button for Master File Menu. <br>
+h) Press the #6 button for Sub-Master Setup. <br>
+i) Press F1 to Add a New Sub-Master Level.<br>
+j) At SMS Group Name prompt Press the F3 button to bring up the character keyboard and use the up and down arrows to scroll to the selected letter and press enter. <br>
+k) After entering SMS Group name press the F3 button again to disengage keyboard. <br>
+l) Press the Down arrow 2 times to highlight SMS Level Number and input a number between 1-99 then press enter, the group number will always stay 01. <br>
+m) Press Enter at group number. <br> 
+n) Input Starting month and press enter, input starting day and press enter, input starting year and press enter, input starting time and press enter. <br>
+o) Input the ending month and press enter, input the ending day and press enter, input ending year and press enter, input ending time and press enter. <br>
+p) Highlight all valid days of the week by using arrows to navigate to the days and the enter button to highlight them. <br>
+q) Press the F2 button for option 1. <br>
+r) Press the enter button to chose the command. Use up/dwn arrows to navigate list, highlight the selected command and press enter again, then press the down arrow to go to parameter 1. <br>
+s) Input parameter 1 then down arrow to parameter 2 and input. <br>
+t) Press the F2 button to add. <br>
+u) Press the F1 button for ok. <br>
+v) Press the F1 button for ok. <br> <br>
+	
+	
+    <u>Issuing Staff keys with the Large Keypad StandAlone Unit </u><br>
+
+a) Select Management Card Menu. <br>
+b) Press 3 for Issue Sub-Master Key. <br>
+c) Use up/dwn arrows to scroll to level number of the key that you want to make and press the F1 button for ok. <br>
+d) Use the check screen to confirm the data. <br>
+e) Press F1 to issue. <br>
+f) Use up/dwn arrow to scroll the staff member authorizing the production of this key and press f4 to select. <br>
+g) Press F1 to issue. <br>
+h) Insert a Smart Chip Card on top.
+
+    
+
+
+</div>
+
+<script>
+function myFunction4A() {
+  var x = document.getElementById("4A");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End 4A--> 
+
+<!-- Start 4B --> 
+<div class="q">
+<p>
+<br><b> L4 B) MSR Slider and Athena Smartcard Reader: How to Create a staff member account on key machine and Issue Staff Keys? </b> </p>
+<button class="button" onclick="myFunction4B()">4B) Show/Hide Solution</button>
+</div>
+<div class="DIV" id="4B">
+ <img src="MSR and Athena.jpg" alt="pbi" style="width:260px;height:260px;" hspace="5"> <br> <br>
+	
+	
+<u> Instructions for MSR SLIDER & ATHENA SMART CARD READER- Keymaker is a Windows 10 PC (new type)-</u><br>
+   <u>Adding Staff members to the AL5H PC Server </u> <br>
+Open the AL5H PC Server Program <br>
+a) Log in with manager's staff code and password <br>
+b) Click maintenance <br>
+c) Click hotel setup <br>
+d) Click submaster group <br>
+e) Click add <br>
+f) Enter a name (example:  manager/front desk/housekeeperr) <br>
+g) Enter a level # such as 31 <br>
+(The system remembers staff members as numbers, so you made a manager level 31, the next person you add should be level 32, and so on) <br>
+h) Check the valid date, this shows how long cards make with this account will work. <br>
+i) Change valid time ( if you want their cards to work 24/7 then change it to 00;00 to 23:59) <br>
+j) Click add (f1) on lower left <br>
+k) Command should say room range, enter the lowest and the highest room in property then press ok (f9) <br>
+l) Press add (f1) again, change command to room type, enter the lowest and highest floor # then press ok (f9) <br>
+m) On the submaster group window, press ok (f9) to save  
+<br> <br>
+    
+    <u>Issuing Staff keys with the AL5H PC Server</u> <br> 
+    Open the AL5H PC Server Program <br>
+    Sign in with Manager's Staff Code and Password <br> 
+Click Management, Click  Issue Submaster Card <br>
+Choose an account on Submaster Group, check the valid date and time to make sure it will work <br>
+On the command section, check to see if it has a room range (those are the rooms the account is allowed to access <br>
+ You'll have two choices, either New or Duplicate <br>
+Choose New if you want the card to disable any previous cards under the same account (when used on a lock) <br>
+  or <br>
+Choose Duplicate if  you Do Not want to disable any previous cards made under the same account (when used on a lock) <br>
+ Click issue and Insert a white, Chip Card on the Athena Smart Card Writer  <br>
+	
+	
+</div>
+<script>
+function myFunction4B() {
+  var x = document.getElementById("4B");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End 4B--> 
+
+
+
+
+<!-- Start 5th --> 
+<div class="q">
+<p>
+	<br> <b> L5) MSR Slider has an error when trying to make keys, encoder not ready </b> </p>
+<button class="button" onclick="myFunction5()">5) Show/Hide Solution </button>
+</div>
+<div class="DIV" id="five">
+    (under construction) <br>
+ Port may have changed due to unplugging, com port to be checked and changed on AL5H PC Server
+</div>
+<script>
+function myFunction5() {
+  var x = document.getElementById("five");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End 5th--> 
+
+<!-- Start 6th --> 
+<div class="q">
+<p>
+	<br> <b> L6) How to Clear Sequence on a Lock? </b>  </p>
+<button class="button" onclick="myFunction6()">6) Show/Hide Solution</button>
+</div>
+<div class="DIV" id="six">
+ <img src="AL5H Standalone aim at lock.jpg" alt="Tablet" hspace="8" style="width:230px;height:230px;"> OR 
+    <img src="Legacy AL5H DTU aim to lock.jpg" alt="Tablet" hspace="8" style="width:230px;height:230px;"> OR 
+    <img src="AL5H Tablet aim to lock.jpg" alt="Tablet" hspace="8" style="width:230px;height:230px;"><br>
+Large Keypad Model# RCHL SA01/02------Small Keypad Model# AL5HDTU1--------Touchscreen Tablet <br><br>
+There are 3 different lock programmers, choose instructions for the one you have <br>
+Clearing the sequence for RCHL Sa 01/02, AL5Hdtu1, or Touchscreen Tablet<br><br>
+
+<u> Large keypad (Model# RCHL SA01/02)</u><br>
+(under construction)<br>
+Clearing the sequence- large keypad  <br>
+a) Turn off FDU. <br>
+b) Seprate the Keypad from the Base Slider. <br>
+c) xxx <br>
+d) Turn on the DTU. <br>
+e) Enter your Staff Code, Password and Press F1 (Ok) <br>
+f) Press 1 for Normal Mode. <br>
+g) Press 3 for Clear Mode.  <br>
+h) Insert a card and leave there, red light is ok Press SEND/RCV <br>
+i) Select all Cards <br>
+j) Insert a card and leave there, red light is ok Press SEND/RCV again<br>
+*The Item Resel. Button is your back button if you need to go to a previous choice <br><br>
+	
+<u>Small keypad (Model# AL5HDTU1)</u> <br>
+Clearing a lock sequence:  <br>
+a) Turn on the DTU.  <br>
+b) Sign in with your staff code and password, then press Enter  <br>
+c) Press the #1 button for R/C  <br>
+d) Select F1 for Normal Mode.  <br>
+e) Select F3 for Clear Mode.  <br>
+f) Clear Mode , Push SEND/RCV button  <br>
+g) DTU will say “Try Connect” insert card and keep it inserted (red light is ok), aim DTU at LED until display shows “Loading Success” Press Enter.  <br>
+h) Press Enter to select C-01 ALL SEQ CLR Press CLEAR button on the keypad  <br>
+i) Push SEND/RCV button. C-01 ALL SEQ CLR / TRY TO CONNECT  <br>
+j) Insert card into the lock, don’t remove card aim DTU at LED until display shows “Loading Success” when finished, if Loading fail push error reset, Clear button and try again  <br>
+*The Item Resel. Button is your back button if you need to go to a previous choice <br> <br>	
+	<u>Touch Screen Tablet DTU</u> <br>
+Open the DTU Starter program by double clicking it  <br>
+Press Ok (F1)  <br>
+Enter Staff Code and Password, Press Ok(F1)  <br>
+a) Select 1. Lock Setup Menu  <br>
+b) Select 3. Read/Clear Sequence  <br>
+c) Click Upload   <br>
+e) On popup, Select Ok, Insert any card (have it light up red, and keep the card inserted)  Aim the Black Actisys USB at the Black Strip to the right of the indicator light  <br>
+f) The greyed out spaces will now show check boxes, check the "ALL cards" box below Clear  <br>
+g) Click Clear (F5) on the lower left corner, and Click Ok on the popup  <br>
+h) Pull out the card you previously inserted and Reinsert it so a red light shows again.  <br>
+i)  Aim the Black Actisys USB at the Black Strip to the right of the indicator light  <br>
+*If it is not sending the signal, try exiting the software, reopening it and starting over <br> <br>
+	
+	<u>Understanding Sequences:</u><br>
+Whenver you make a card or batch of cards, a sequence number is assigned to them. <br>
+When you make a New Issue on the same guest room, or staff member's account, a higher level sequence number is assigned to it <br>
+When you use the newer card on a lock, it will no longer accept any lower sequence or older cards, thus the sequence error <br>
+To avoid sequence error, you make a duplicate card in order not to assign a higher sequence number and disable the previous card <br>
+Also note that batches of cards, i.e. 10 cards made as a set have identical sequence numbers and will not cancel each other out<br>
+
+	
+</div>
+<script>
+function myFunction6() {
+  var x = document.getElementById("six");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End 6th--> 
+
+<!-- Start 7th --> 
+<div class="q">
+<p>
+	<br> <b> L7) Disabling Lost/Stolen Staff or Guest Keys </b> </p>
+<button class="button" onclick="myFunction7()">7) Show/Hide Solution</button>
+</div>
+<div class="DIV" id="seven">
+   Create a new issue of the staff or guest key and run it by the appropriate door.
+   <br></br>
+  The old keys will no longer work on a lock that is activated by a new issue of keys.
+
   
-  
+
+</div>
+<script>
+function myFunction7() {
+  var x = document.getElementById("seven");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End 7th--> 
+
+
+<!-- Start NEW --> 
+<div class="q">
+<p>
+	<br> <b> LNEW) NEW </b> </p>
+<button class="button" onclick="myFunctionNEW()">NEW) Show/Hide Solution</button>
+</div>
+<div class="DIV" id="NEW">
+NEW
+</div>
+<script>
+function myFunctionNEW() {
+  var x = document.getElementById("NEW");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End NEW--> 
+
+
+
 </body>
+
+
 
 </html>
