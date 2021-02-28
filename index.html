@@ -840,8 +840,33 @@ function myFunctionL13() {
 }
 </script>
 <!-- End L13--> 
-	
 
+<h3>--- <u>MiFare Plus QUESTIONS</u> --- </h3>
+<!-- Start M1 --> 
+<div class="q">
+<p>
+<br> <b> M1) How do I program a Mifare Plus Lock?  </b> </p>
+<button class ="button" onclick="myFunctionM1()">M1) Show/Hide Solution</button>
+</div>
+<div class="DIV" id="M1">
+(Under Constrction) <br>
+When first activating a Mifare Plus Lock, you must use a 3999 DTU Card together with the Tablet DTU (that has the actual hotel code) <br>
+After that, you must use a different DTU card that has Actual hotel code if you need to reprogram the lock again <br><br>
+Note***<br>
+Mifare Plus cards become locked to the first hotel code you assign them to, and cannot be re-used to a different hotel code <br>
+</div>
+<script>
+function myFunctionM1() {
+  var x = document.getElementById("M1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End M1--> 
+	
 
 
 <h3>---<u>ALV2 PC SERVER AND KEY MAKING RELATED QUESTIONS</u>--- </h3>
