@@ -1104,7 +1104,49 @@ function myFunctionL16() {
 </script>
 <!-- End L16--> 
 
+<!-- Start L17 --> 
+<div class="q">
+<p>
+<br> <b> L17) Creating and using a Passage card on a Common door </b> </p>
+<button class ="button" onclick="myFunctionL17()">H0) Show/Hide Solution</button>
+</div>
+<div class="DIV" id="L17">
+Passage Card are usually used for conference rooms or certain rooms which <br>
+guests rent out for a few hours.<br>
+ 
+When used on a door, the door stays unlocked until the expiration time of the card <br>
+Then it returns to it's locked state. <br>
 
+If you want to return the door to it's locked state, <br>
+use the passage card on the door again. <br>
+
+If you want to set the door to an opened state again, use the passage key on the door. <br>
+(This can only work while you are within the time period the card was set to)  <br>
+(The door Must be programmed as a common dor for this to work) <br><br>
+
+---<br>
+
+To create a passage key:<br><br>
+
+Log on as a manager to the ALV2 PC Software<br>
+Management -> Passage Card <br>
+Select Common door  <br>
+Click on the Staff dropdown and select a staff member <br>
+Set the start and end time for this card to work <br>
+Click Issue and use a 4k Staff Card to create it  <br>
+</div>
+<script>
+function myFunctionL17() {
+  var x = document.getElementById("L17");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!-- End L17--> 
+	
 
 
 
