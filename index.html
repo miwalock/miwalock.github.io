@@ -995,11 +995,46 @@ function myFunctionL14() {
 <!-- Start L15 --> 
 <div class="q">
 <p>
-<br> <b> L15) L15  </b> </p>
+<br> <b> L15) How to Program a Special Door ?  </b> </p>
 <button class ="button" onclick="myFunctionL15()">L15) Show/Hide Solution</button>
 </div>
 <div class="DIV" id="L15">
-L15
+Setting up a Special door <br>
+Examples would be a VIP guest lounge, or Gold Member access only <br>
+
+1.) You will have to create the Special door # on the ALV2 PC Server,  <br>
+If you want employee access to it- give access to one of the submaster accounts/remake that submaster key. <br>
+If you want guests to be able to access it, you have check the box on List f10 when cutting the key  <br><br>
+
+2.) Then reprogram the door lock as the same special door # as the one added to the ALV2 PC Server.<br><br>
+
+
+
+
+*1.) Creating a Special door on the ALV2 PC Server<br>
+Go to Setup, Room Type. <br>
+Under Special Room, choose a room # such as 11 <br>
+Where it says Room Type Name, Enter the name such as VIP Lounge. <br>
+Click Apply to Save.  <br>
+Go to Setup, Submaster. <br>
+Select an account and scroll to the right,  <br>
+You should see a new checkbox for that Special room you created. <br>
+Check the box and click apply to give that account access to that Special Room Number. <br>
+Re-issue the submaster card, it will have access to that Special room #. <br><br>
+
+If you want guests to be able to access it-<br>
+When issuing a guest key, click on List (F10), check the box of the special room to be accessed. <br>
+click apply. <br>
+Then issue the guest key as usual, it should have access to the Special Room <br><br>
+
+*2.) Programming a Special Door<br>
+On the Tablet DTU, login and go to the main menu. <br>
+Go to lock initialization and select special room. <br>
+enter the special room # that you added to the ALV2 PC Server, such as 11.  <br>
+Press confirm <br>
+Do not change any of the settings on the next window, even if the room # says 101.  <br>
+Press confirm, Press send and reprogram the lock. <br>
+
 </div>
 <script>
 function myFunctionL15() {
