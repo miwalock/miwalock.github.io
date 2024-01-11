@@ -427,6 +427,10 @@ The  key created by the front desk must have a matching hotel code to the lock t
 <u> Unacceptable Time Frame 0x1A </u> - <br>
 Usually happens with one-shot cards, it means the date and time on the lock is way off and it cannot accept the card. It should be re-programmed to the correct date and time.<br> <br>
 
+<u> 0x20 Invalid date with sms year month day </u> - <br>
+The submaster card has expired, you will need to increase it's expiration date and re-issue it <br> <br>
+	
+
 <u> 0x42 detect battery near end </u> - <br>
 The employee key was set up to not work if the door is low battery. To remove this setting go to management, submastercard, and uncheck the box that says <br>
 Not unlock when battery near end, then reissue the card as a duplicate <br><br>
