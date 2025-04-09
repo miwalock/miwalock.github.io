@@ -425,10 +425,13 @@ The  key created by the front desk must have a matching hotel code to the lock t
 <br><br>
 
 <u> Unacceptable Time Frame 0x1A </u> - <br>
-Usually happens with one-shot cards, it means the date and time on the lock is way off and it cannot accept the card. It should be re-programmed to the correct date and time.<br> <br>
+Usually happens with one-shot cards or maintenance cards, it means the date and time on the lock is way off and it cannot accept the card. It should be re-programmed to the correct date and time.<br> <br>
 
 <u> 0x20 Invalid date with sms year month day </u> - <br>
 The submaster card has expired, you will need to increase it's expiration date and re-issue it <br> <br>
+
+<u> 0x16 Invalid card has used </u> - <br>
+Usually happens with a guest key that was disabled on a common door, via the Cancel Card <br> <br>
 	
 
 <u> 0x42 detect battery near end </u> - <br>
